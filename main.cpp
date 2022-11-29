@@ -40,6 +40,7 @@ void read_objs (Shape **list){
 void print_objs (Shape *list){
     Shape *cur_shape;
     cur_shape = list;
+    cout << "HERE" << endl;
     while(cur_shape != NULL){
         cout << "Name: " << cur_shape->type << endl;
         cur_shape->print_color();
