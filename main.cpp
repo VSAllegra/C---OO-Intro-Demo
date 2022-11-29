@@ -45,6 +45,7 @@ void print_objs (Shape *list){
         cur_shape->print_color();
         cur_shape->print_loc();
         cout << "Volume: " << cur_shape->compute_volume() << endl;
+        cur_shape = cur_shape->next;
     }
 
 
@@ -53,8 +54,14 @@ void print_objs (Shape *list){
 int main ()
 {
     Shape *list;
+    Shape *head;
     read_objs (&list);
     print_objs (list);
-    // add loop here to return any allocated space to the system
+    while(list != NULL){
+      head = list;
+      list = list->next;
+      free(head);
+    }
+    
     return (0);
 }
