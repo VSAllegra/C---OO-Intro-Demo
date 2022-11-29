@@ -1,4 +1,8 @@
+#include <string>
 #include "shape.h"
+#include "point.h"
+
+using namespace std;
 
 
 Shape::Shape(string type, string color, Point loc){

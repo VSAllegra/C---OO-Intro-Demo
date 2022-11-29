@@ -2,11 +2,11 @@
 
 class Shape
 {
-    string type;
-    Point loc;
-    string color;
-    Shape * next;
     public:
+        string type;
+        Point loc;
+        string color;
+        Shape * next;
         Shape (string type, string color, Point loc);
         virtual void print_color (void);
         virtual double compute_volume (void) = 0;
