@@ -15,13 +15,13 @@ void read_objs (Shape **list){
    while (cin >> type) {
 
       if (type.compare ("sphere") == 0) {
-        cin >> x >> y >> z >> color >> rad;
+        cin >> x >> y >> z >> rad >> color;
 
         node = new Sphere (type, color, Point (x, y, z), rad);
       }
 
       else if (type.compare ("box") == 0) {
-        cin >> x >> y >> z >> color >> color2, l, w, h;
+        cin >> l >> w >> h >> x >> y >> z >> color >> color2;
 
         node = new Box (type, color, color2, l, w, h, Point (x, y, z));
       }
@@ -35,7 +35,7 @@ void read_objs (Shape **list){
 
       node->next = *list;
       *list = node;
-   }
+      }
 }
 
 void print_objs (Shape *list){
@@ -48,8 +48,6 @@ void print_objs (Shape *list){
         cout << "Volume: " << cur_shape->compute_volume() << endl;
         cur_shape = cur_shape->next;
     }
-
-
 }
 
 int main ()
