@@ -6,7 +6,8 @@ double Point::length(){
 }
 
 Point Point::operator- (Point& p){
-    Point * point = new Point(x - p.x, y - p.y, z - p.z);
+    Point point = Point(x - p.x, y - p.y, z - p.z);
+    return point;
 }
 
 void Point::print (void){

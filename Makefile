@@ -17,9 +17,11 @@ main: main.o Point.o Shape.o Sphere.o Box.o Cone.o
 main.o: main.cpp Point.h Shape.h Sphere.h Box.h Cone.h
 	$(CC) $(CFLAGS) -c main.cpp
  
-Point.o: Point.h
+Point.o: Point.cpp Point.h
+	$(CC) $(CFLAGS) -c point.cpp
  
-Shape.o: Shape.h Point.h
+Shape.o: Shape.cpp Shape.h Point.cpp Point.h
+	$(CC) $(CFLAGS) -c Shape.cpp
 
 Cone.o: Shape.h Point.h Cone.h
 
