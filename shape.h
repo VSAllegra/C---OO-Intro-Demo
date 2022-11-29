@@ -1,3 +1,6 @@
+#ifndef SHAPE_H
+#define SHAPE_H
+
 #include "point.h"
 
 class Shape
@@ -13,3 +16,6 @@ class Shape
         void print_type (void);
         void print_loc (void);
 };
+
+
+#endif

@@ -22,3 +22,4 @@ void Shape::print_type(void){
 void Shape::print_loc(void){
     loc.print();
 }
+
