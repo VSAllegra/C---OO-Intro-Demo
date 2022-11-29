@@ -14,7 +14,7 @@ Sphere::Sphere (string type, string color, Point center, double radius)
 
 void Sphere::print_color (void)
 {
-   cout << "Color: "  << color;
+   cout << "Color: "  << color << endl;
 }
 
 double Sphere::compute_volume (void){
