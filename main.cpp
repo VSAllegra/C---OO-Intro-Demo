@@ -46,7 +46,8 @@ void print_objs (Shape *list){
         cout << "Name: " << cur_shape->type << endl;
         cur_shape->print_color();
         cur_shape->print_loc();
-        cout << "Volume: " << cur_shape->compute_volume() << "\n" << endl;
+        cout << "Volume: " << cur_shape->compute_volume() << endl;
+        cout << endl;
         cur_shape = cur_shape->next;
 
     }
