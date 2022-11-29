@@ -1,4 +1,3 @@
-#include <iostream>
 #include <cmath>
 #include "point.h"
 
@@ -11,5 +10,5 @@ Point Point::operator- (Point& p){
 }
 
 void Point::print (void){
-    std::cout << "x: " << x << " y: " << y << " z: " << z << std::endl;
+    cout << "x: " << x << " y: " << y << " z: " << z << endl;
 }
