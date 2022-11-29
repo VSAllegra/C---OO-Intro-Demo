@@ -11,5 +11,5 @@ Point Point::operator- (Point& p){
 }
 
 void Point::print (void){
-    cout << "x: " << x << " y: " << y << " z: " << z << endl;
+    cout << "Location: " << "x: " << x << " y: " << y << " z: " << z << endl;
 }
