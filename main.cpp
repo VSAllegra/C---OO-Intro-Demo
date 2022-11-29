@@ -1,6 +1,7 @@
+#include "point.h"
 #include "shape.h"
-#include "cone.h"
 #include "sphere.h"
+#include "cone.h"
 #include "box.h"
 
 void read_objs (Shape **list){
