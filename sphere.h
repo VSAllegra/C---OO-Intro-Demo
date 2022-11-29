@@ -2,8 +2,8 @@
 #define SPHERE_H
 
 #include <string>
-#include "shape.h"
 #include "point.h"
+#include "shape.h"
 
 using namespace std;
 
@@ -16,7 +16,7 @@ class Sphere: public Shape{
 
         void print_color (void);
 
-        double compute_volume(void);
+        double compute_volume (void);
 
         void print_type (void) { cout << "should never be called" << endl; }
 };
