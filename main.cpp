@@ -41,12 +41,14 @@ void read_objs (Shape **list){
 void print_objs (Shape *list){
     Shape *cur_shape;
     cur_shape = list;
+    cout << "Objects: " << endl;
     while(cur_shape != NULL){
         cout << "Name: " << cur_shape->type << endl;
         cur_shape->print_color();
         cur_shape->print_loc();
-        cout << "Volume: " << cur_shape->compute_volume() << endl;
+        cout << "Volume: " << cur_shape->compute_volume() << "\n" << endl;
         cur_shape = cur_shape->next;
+
     }
 }
 
