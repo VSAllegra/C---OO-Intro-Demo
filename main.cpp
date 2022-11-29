@@ -34,13 +34,13 @@ void read_objs (Shape **list){
       }
 
       node->next = *list;
+      *list = node;
    }
 }
 
 void print_objs (Shape *list){
     Shape *cur_shape;
     cur_shape = list;
-    cout << "HERE" << endl;
     while(cur_shape != NULL){
         cout << "Name: " << cur_shape->type << endl;
         cur_shape->print_color();
@@ -54,7 +54,6 @@ void print_objs (Shape *list){
 
 int main ()
 {
-    cout << "HERE" << endl;
     Shape *list;
     Shape *head;
     read_objs (&list);
