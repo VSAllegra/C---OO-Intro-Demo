@@ -12,6 +12,11 @@ Sphere::Sphere (string type, string color, Point center, double radius)
     this->radius = radius;
 };
 
+void Sphere::print_color (void)
+{
+   cout << "Color: "  << color;
+}
+
 double Sphere::compute_volume (void){
     return (4 * M_PI * radius * radius * radius)/3;
 };
