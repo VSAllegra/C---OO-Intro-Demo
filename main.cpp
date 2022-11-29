@@ -42,6 +42,7 @@ void print_objs (Shape *list){
     Shape *cur_shape;
     cur_shape = list;
     cout << "Objects: " << endl;
+    cout << endl;
     while(cur_shape != NULL){
         cout << "Name: " << cur_shape->type << endl;
         cur_shape->print_color();
