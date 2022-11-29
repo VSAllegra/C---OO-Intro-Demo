@@ -17,7 +17,7 @@ Box::Box(string type, string color, string tbcolor, double length, double width,
 
 void Box::print_color (void)
 {
-   cout << "Sode Color: "  << color << "  Top/Base Color: " << tbcolor;
+   cout << "Sode Color: "  << color << "  Top/Base Color: " << tbcolor << endl;
 }
 
 double Box::compute_volume(void){
