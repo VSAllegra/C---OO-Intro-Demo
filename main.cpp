@@ -54,6 +54,7 @@ void print_objs (Shape *list){
 
 int main ()
 {
+    cout << "HERE" << endl;
     Shape *list;
     Shape *head;
     read_objs (&list);
