@@ -1,3 +1,6 @@
+#ifndef SPHERE_H
+#define SPHERE_H
+
 #include <string>
 #include "shape.h"
 #include "point.h"
@@ -17,3 +20,5 @@ class Sphere: public Shape{
 
         void print_type (void) { cout << "should never be called" << endl; }
 };
+
+#endif
