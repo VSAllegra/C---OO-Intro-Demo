@@ -53,6 +53,7 @@ void print_objs (Shape *list){
         cur_shape = cur_shape->next;
 
     }
+    cout << endl;
 }
 
 int main ()
