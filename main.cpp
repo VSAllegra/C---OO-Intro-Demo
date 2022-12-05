@@ -41,7 +41,6 @@ void read_objs (Shape **list){
 void print_objs (Shape *list){
     Shape *cur_shape;
     cur_shape = list;
-    cout << endl;
     cout << "Objects: " << endl;
     cout << endl;
     while(cur_shape != NULL){
@@ -53,7 +52,6 @@ void print_objs (Shape *list){
         cur_shape = cur_shape->next;
 
     }
-    cout << endl;
 }
 
 int main ()
